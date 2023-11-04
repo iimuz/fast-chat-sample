@@ -1,0 +1,35 @@
+[project]
+authors = [{name = "iimuz", email = "iz.primary.story+github@gmail.com"}]
+description = "lm-sys/FastChatのお試し."
+license = {file = "LICENSE"}
+name = "trial_lm_sys_fast_chat"
+readme = "README.md"
+requires-python = ">=3.10"
+urls = {repository = "https://github.com/iimuz/til/src/til-20231105"}
+version = "0.1.0"
+
+dependencies = [
+  "fctchat[model_worker,webui]",
+]
+
+[tools.setuptools.package-dir]
+stable_diffusion_script = "src"
+
+[project.optional-dependencies]
+dev = [
+  "black",
+  "flake8",
+  "flake8-black",
+  "flake8-bugbear",
+  "flake8-docstrings",
+  "flake8-isort",
+  "isort",
+  "mypy",
+]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+
+[tool.isort]
+profile = "black"

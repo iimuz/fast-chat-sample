@@ -74,6 +74,20 @@ $ pip freeze > requirements-dev.txt  # requirements.txtと同様に処理
 
 ### お試ししたモデル
 
-- `elyza/ELYZA-japanese-Llama-2-7b-fast-instruct`
-- `lmsys/vicuna-7b-v1.5`
-- `stabilityai/japanese-stablelm-instruct-gamma-7b`
+|      開発主体      |   発表日   | モデルサイズ | HuggingFace のパス                                                                                                          | 備考                                      |
+| :----------------: | :--------: | -----------: | :-------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------- |
+|     CyberAgent     | 2023-05-17 |           7B | [`cyberagent/open-calm-7b`](https://huggingface.co/cyberagent/open-calm-7b)                                                 |                                           |
+|     CyberAgent     | 2023-11-02 |           7B | [`cyberagent/calm2-7b`](https://huggingface.co/cyberagent/calm2-7b)                                                         |                                           |
+|       ELYZA        | 2023-08-28 |           7B | [`elyza/ELYZA-japanese-Llama-2-7b-fast-instruct`](https://huggingface.co/elyza/ELYZA-japanese-Llama-2-7b-fast)              |                                           |
+|   HuggingFace H4   | 2023-10-26 |           7B | [`HuggingFaceH4/zephyr-7b-beta`](https://huggingface.co/HuggingFaceH4/zephyr-7b-beta)                                       |                                           |
+|     LMSYS Org.     | 2023-07-29 |           7B | [`lmsys/vicuna-7b-v1.5`](https://huggingface.co/lmsys/vicuna-7b-v1.5)                                                       |                                           |
+| Preffered Networks | 2023-09-28 |          13B | [`pfnet/plamo-13b`](https://huggingface.co/pfnet/plamo-13b)                                                                 | `--load-8bit`オプションで起動できなかった |
+| Stability AI Japan | 2023-10-25 |           7B | [`stabilityai/japanese-stablelm-instruct-gamma-7b`](https://huggingface.co/stabilityai/japanese-stablelm-instruct-gamma-7b) |                                           |
+
+### 試したいモデル
+
+|  開発主体  |   発表日   | モデルサイズ | HuggingFace のパス                                                                                                                          | 備考 |
+| :--------: | :--------: | -----------: | :------------------------------------------------------------------------------------------------------------------------------------------ | :--- |
+|    LINE    | 2023-08-14 |         3.6B | [`line-corporation/japanese-large-lm-3.6b-instruction-sft`](https://huggingface.co/line-corporation/japanese-large-lm-3.6b-instruction-sft) |      |
+| LMSYS Org. | 2023-07-29 |          13B | [`lmsys/vicuna-13b-v1.5`](https://huggingface.co/lmsys/vicuna-13b-v1.5)                                                                     |      |
+| CyberAgent | 2023-11-02 |           7B | [`cyberagent/calm2-7b-chat`](https://huggingface.co/cyberagent/calm2-7b-chat)                                                               |      |

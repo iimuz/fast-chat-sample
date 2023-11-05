@@ -9,7 +9,7 @@ urls = {repository = "https://github.com/iimuz/til/src/til-20231105"}
 version = "0.1.0"
 
 dependencies = [
-  "fctchat[model_worker,webui]",
+  "fschat[model_worker,webui]",
 ]
 
 [tools.setuptools.package-dir]

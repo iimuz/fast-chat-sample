@@ -42,6 +42,23 @@ tasks:
       - git clean -fdx {{.VENV_DIR}}
       - git clean -fdx node_modules
 
+  cli:
+    desc: "Run CLI. e.g: task cli -- --model-path lmsys/vicuna-7b-v1.5"
+    cmds:
+      - "{{.PYTHON}} -m fastchat.serve.cli {{.CLI_ARGS}}"
+  server-controller:
+    desc: Run controller.
+    cmds:
+      - "{{.PYTHON}} -m fastchat.serve.controller"
+  server-model-worker:
+    desc: "Run model worker. eg: task server-model-worker -- --model-path lmsys/vicuna-7b-v1.5"
+    cmds:
+      - "{{.PYTHON}} -m fastchat.serve.model_worker {{.CLI_ARGS}}"
+  server-web:
+    desc: Run web server.
+    cmds:
+      - "{{.PYTHON}} -m fastchat.serve.gradio_web_server"
+
   # linter, formatter
   lint:
     desc: Lint files.
